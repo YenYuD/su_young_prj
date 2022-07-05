@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../src/bg 1.svg");
+  background-position: 50% 30%;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  padding-left: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #224040;
+}
+
+nav ul li.login {
+  border: 1px solid #224040;
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+}
+
+nav ul li.login:hover {
+  background-color: #224040;
+}
+
+nav ul li.login:hover a {
+  color: #ffffff;
+}
+
+nav ul li.hover:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #224040;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+nav img {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+nav img:hover {
+  -webkit-transform: translate(-50px, -10px);
+          transform: translate(-50px, -10px);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */
