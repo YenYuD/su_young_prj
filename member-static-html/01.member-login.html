@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>會員登入</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="./fontawesome-free-6.1.1-web 2/css/all.css"
+        />
     </head>
     <body>
         <nav>
@@ -19,6 +23,41 @@
             </ul>
         </nav>
 
-        <main></main>
+        <main>
+            <div class="login-container">
+                <div class="login-title">舒營-會員登入</div>
+                <div class="login-card">
+                    <form>
+                        <div class="title">帳號：</div>
+                        <div class="group">
+                            <input type="text" required />
+                            <label>Username</label>
+                        </div>
+                        <div class="title">密碼：</div>
+                        <div class="group">
+                            <input type="text" required />
+                            <label>Password</label>
+                        </div>
+                        <div class="btn">
+                            <button class="submit-login">登入</button>
+                        </div>
+                    </form>
+                    <div class="third-party">
+                        <div class="google-login">
+                            <a href="#"
+                                >login with google
+                                <img src="./src/google-icon.svg" alt=""
+                            /></a>
+                        </div>
+                        <div class="facebook-login">
+                            <a href="#"
+                                >login with facebook
+                                <img src="./src/facebook.svg" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
