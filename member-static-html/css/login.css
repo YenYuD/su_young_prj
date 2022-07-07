@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background-image: url("../src/bg 1.svg");
   background-position: 50% 40%;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   font-family: "Noto Sans TC", sans-serif;
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 85vh;
 }
 
 nav {
@@ -109,13 +109,14 @@ nav img:hover {
 }
 
 input {
+  width: 280px;
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 10px 10px 10px 30px;
   display: block;
-  width: 300px;
   border: none;
   background-color: #fff6e7;
   border-radius: 20px;
+  color: #224040;
 }
 
 input:focus {
@@ -168,12 +169,19 @@ form .btn button:active {
   transition: all 0.1s ease;
 }
 
+form a {
+  text-decoration: none;
+  color: #fba63a;
+  font-size: 14px;
+}
+
+form a:hover {
+  color: #fcd29b;
+}
+
 .login-container {
-  position: absolute;
   width: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,8 +205,22 @@ form .btn button:active {
 }
 
 .login-container .login-card {
+  max-width: 600px;
+  margin-top: 30px;
+  margin: 0 auto;
+  padding: 30px 30px 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30vw;
   border-radius: 1.5rem;
-  padding: 50px 150px 150px 150px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.03)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.03));
   -webkit-backdrop-filter: blur(2px);
@@ -214,6 +236,7 @@ form .btn button:active {
 
 .login-container .login-card .third-party .google-login {
   padding-bottom: 20px;
+  width: 280px;
 }
 
 .login-container .login-card .third-party .google-login a {
@@ -228,9 +251,9 @@ form .btn button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
-  padding: 8px 20px;
-  background-color: rgba(0, 0, 0, 0.543);
+  font-size: 16px;
+  padding: 8px 18px;
+  background-color: rgba(0, 0, 0, 0.379);
   border-radius: 1.5rem;
 }
 
@@ -251,6 +274,10 @@ form .btn button:active {
           transform: rotate(45deg);
 }
 
+.login-container .login-card .third-party .facebook-login {
+  width: 280px;
+}
+
 .login-container .login-card .third-party .facebook-login a {
   text-decoration: none;
   color: #ffffff;
@@ -263,9 +290,9 @@ form .btn button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
-  padding: 8px 20px;
-  background-color: rgba(0, 0, 0, 0.543);
+  font-size: 16px;
+  padding: 8px 18px;
+  background-color: rgba(0, 0, 0, 0.379);
   border-radius: 1.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -365,4 +392,103 @@ footer .footer_right li {
   font-size: larger;
   font-weight: 400;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 1200px) {
+  body main .login-container .login-card {
+    width: 40vw;
+  }
+  body main .login-container .login-card .title {
+    font-size: 16px;
+  }
+  body main .login-container .login-card .third-party .google-login,
+  body main .login-container .login-card .third-party .facebook-login {
+    width: 240px;
+  }
+  body main .login-container form input {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  body main .login-container .login-card {
+    width: 450px;
+  }
+  body main .login-container form input {
+    width: 250px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body main .login-container .login-title {
+    font-size: 18px;
+  }
+  body main .login-container .login-card {
+    width: 450px;
+  }
+  body main .login-container .login-card .third-party {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .login-container .login-card .third-party .google-login,
+  body main .login-container .login-card .third-party .facebook-login {
+    min-width: 80px;
+  }
+  body main .login-container form .title {
+    font-size: 14px;
+  }
+  body main .login-container form input {
+    width: 250px;
+    padding: 10px 10px 7px 30px;
+  }
+  body main .login-container form .group label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body main .login-container .login-title {
+    font-size: 18px;
+  }
+  body main .login-container .login-card {
+    width: 80vw;
+  }
+  body main .login-container .login-card .third-party {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .login-container .login-card .third-party .google-login,
+  body main .login-container .login-card .third-party .facebook-login {
+    min-width: 80px;
+  }
+  body main .login-container .login-card .third-party .google-login a,
+  body main .login-container .login-card .third-party .facebook-login a {
+    font-size: 12px;
+  }
+  body main .login-container form .title {
+    font-size: 14px;
+  }
+  body main .login-container form input {
+    width: 180px;
+    padding: 6px 10px 3px 30px;
+  }
+  body main .login-container form .group label {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=login.css.map */
