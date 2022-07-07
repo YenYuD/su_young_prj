@@ -12,6 +12,12 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
+  font-family: "Noto Sans TC", sans-serif;
+  list-style: none;
+}
+
+main {
+  height: 100vh;
 }
 
 nav {
@@ -98,7 +104,7 @@ nav img:hover {
   font-size: 20px;
   color: #ffffff;
   letter-spacing: 5px;
-  font-weight: 400;
+  font-weight: 300;
   text-shadow: 0px 0px 10px #000;
 }
 
@@ -280,5 +286,83 @@ form .btn button:active {
 .login-container .login-card .third-party .facebook-login a:hover img {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+footer {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #224040;
+  color: white;
+}
+
+footer .footer_left {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_left .footer_logo {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_left .footer_logo .big_title {
+  font-size: x-large;
+  font-weight: 400;
+}
+
+footer .footer_left .footer_logo .footer_icon {
+  font-size: x-large;
+}
+
+footer .footer_right {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer_right li {
+  font-size: larger;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
