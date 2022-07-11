@@ -8,6 +8,7 @@
 nav {
   width: 100%;
   max-width: 1680px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
