@@ -3,81 +3,185 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
 }
 
-nav {
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: translateX(-550px);
+            transform: translateX(-550px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: translateX(-550px);
+            transform: translateX(-550px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes nav {
+  0% {
+    -webkit-transform: translateY(-550px);
+            transform: translateY(-550px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes nav {
+  0% {
+    -webkit-transform: translateY(-550px);
+            transform: translateY(-550px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes icon {
+  0% {
+    -webkit-transform: translateX(550px);
+            transform: translateX(550px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes icon {
+  0% {
+    -webkit-transform: translateX(550px);
+            transform: translateX(550px);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.nav-container {
   width: 100%;
-  max-width: 1680px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px;
+  padding: 24px 60px 60px 60px;
 }
 
-nav ul {
+.nav-container .left-logo img {
+  width: 6rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: logo 1s 1;
+          animation: logo 1s 1;
+}
+
+.nav-container .left-logo:hover img {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.nav-container .nav-li {
+  font-weight: 500;
+  -webkit-animation: nav 2s 1;
+          animation: nav 2s 1;
+}
+
+.nav-container .nav-li ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
-  padding-left: 30px;
 }
 
-nav ul li {
+.nav-container .nav-li ul li {
   list-style-type: none;
   padding: 20px;
 }
 
-nav ul li a {
+.nav-container .nav-li ul li a {
   font-size: 20px;
   text-decoration: none;
   color: #224040;
 }
 
-nav ul li.login {
+.nav-container .nav-li ul li.login {
   border: 1px solid #224040;
   padding: 10px 20px;
   border-radius: 1.5rem;
 }
 
-nav ul li.login:hover {
+.nav-container .nav-li ul li.login:hover {
   background-color: #224040;
 }
 
-nav ul li.login:hover a {
+.nav-container .nav-li ul li.login:hover a {
   color: #ffffff;
 }
 
-nav ul li.hover:hover {
+.nav-container .nav-li ul li.hover:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid #224040;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
-nav img {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+.nav-container .right-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: icon 2s 1;
+          animation: icon 2s 1;
 }
 
-nav img:hover {
-  -webkit-transform: translate(-50px, -10px);
-          transform: translate(-50px, -10px);
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+.nav-container .right-icon .login a,
+.nav-container .right-icon .cart a {
+  text-decoration: none;
+  color: #224040;
+}
+
+.nav-container .right-icon .login a .fa-solid,
+.nav-container .right-icon .cart a .fa-solid {
+  padding: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav-container .right-icon .login:hover .fa-cart-shopping,
+.nav-container .right-icon .cart:hover .fa-cart-shopping {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  color: #468484;
+}
+
+.nav-container .right-icon .login:hover .fa-circle-user,
+.nav-container .right-icon .cart:hover .fa-circle-user {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #468484;
 }
 /*# sourceMappingURL=navbar.css.map */

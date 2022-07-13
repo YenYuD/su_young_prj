@@ -176,7 +176,8 @@ body .member-conatiner .member-flex-box .sidebar .side-wrapper .side-menu {
 
 body .member-conatiner .member-flex-box .sidebar .side-wrapper .side-menu a {
   display: block;
-  padding: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
   border-radius: 15px;
   text-decoration: none;
   color: #fff;
