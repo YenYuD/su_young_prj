@@ -21,62 +21,6 @@ main {
     height: 85vh;
 }
 
-nav {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex: 0 0 60%;
-        padding-left: 30px;
-        li {
-            list-style-type: none;
-            padding: 20px;
-            a {
-                font-size: 20px;
-                text-decoration: none;
-                color: #224040;
-            }
-
-            &.login {
-                border: 1px solid #224040;
-                padding: 10px 20px;
-                border-radius: 1.5rem;
-            }
-
-            &.login:hover {
-                background-color: #224040;
-                a {
-                    color: #ffffff;
-                }
-            }
-
-            &.hover:hover {
-                padding-bottom: 5px;
-                border-bottom: 2px solid #224040;
-                transition: 0.5s all ease;
-            }
-        }
-    }
-
-    img {
-        transform: translateX(-50px);
-
-        &:hover {
-            transform: translate(-50px, -10px);
-            transition: all 0.1s ease-in-out;
-        }
-    }
-}
-
-//nav-bar-end
-
 //form
 
 .group {

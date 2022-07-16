@@ -1,13 +1,13 @@
 :root {
     //各種顏色
     --primary_color: #224040;
-    --primary_color_900: #0A1E22;
-    --primary_color_600: #1A5252;
-    --primary_color_500: #62B6B6;
-    --secondary_color: #952E1F;
-    --error_color: #EC391E;
-    --background_color: #F2F2F2;
-    --input_color: #FFF6E7;
+    --primary_color_900: #0a1e22;
+    --primary_color_600: #1a5252;
+    --primary_color_500: #62b6b6;
+    --secondary_color: #952e1f;
+    --error_color: #ec391e;
+    --background_color: #f2f2f2;
+    --input_color: #fff6e7;
     //各種文字大小
     --h1_text: 96px;
     --h2_text: 60px;
@@ -42,7 +42,6 @@ h5 {
 p {
     font-size: var(--text_size);
 }
-
 
 @mixin p_button {
     font-size: var(--button_text);
@@ -79,7 +78,7 @@ p {
     position: absolute;
     pointer-events: none;
     left: var(--text_size);
-    top: calc(var(--text_size)*0.7);
+    top: calc(var(--text_size) * 0.7);
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -87,17 +86,18 @@ p {
 /* input */
 @mixin input_style {
     font-size: var(--subtitle_text);
-    padding: var(--text_size) var(--text_size) var(--text_size) calc(var(--text_size)*3);
+    padding: var(--text_size) var(--text_size) var(--text_size)
+        calc(var(--text_size) * 3);
     display: block;
-    width: calc(var(--h4_text)*10);
+    width: calc(var(--h4_text) * 10);
     height: var(--h3_text);
     border: none;
     background-color: #fff6e7;
     border-radius: var(--h3_text);
     color: var(--primary_color);
-    &:focus, &:invalid{
+    &:focus,
+    &:invalid {
         outline: 1px solid #224040;
-
     }
 }
 
@@ -117,9 +117,9 @@ label {
     @include input_label;
 }
 
-input:focus~label,
-input:invalid~label {
-    top: calc((var(--h5_text))*(-1));
+input:focus ~ label,
+input:invalid ~ label {
+    top: calc((var(--h5_text)) * (-1));
     font-size: var(--text_size);
     color: var(--primary_color);
 }
@@ -135,16 +135,15 @@ html {
     height: 100%;
     font-size: 14px;
 
-    body {
-        width: 100%;
-        min-height: 100%;
-        background-image: url("../src/bg\ 1.svg");
-        background-position: 100% 0%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    // body {
+    //     width: 100%;
+    //     min-height: 100%;
+    //     // background-image: url("../src/bg\ 1.svg");
+    //     background-position: 100% 0%;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    // }
 }
-
 
 @media (max-width: 1680px) {
     :root {
@@ -156,7 +155,6 @@ html {
         --subtitle_text: 16px;
         --button_text: 14px;
         --text_size: 14px;
-
     }
 }
 
@@ -170,7 +168,6 @@ html {
         --subtitle_text: 14px;
         --button_text: 14px;
         --text_size: 14px;
-
     }
 }
 
@@ -184,6 +181,5 @@ html {
         --subtitle_text: 14px;
         --button_text: 12px;
         --text_size: 12px;
-
     }
 }

@@ -1,12 +1,12 @@
 :root {
   --primary_color: #224040;
-  --primary_color_900: #0A1E22;
-  --primary_color_600: #1A5252;
-  --primary_color_500: #62B6B6;
-  --secondary_color: #952E1F;
-  --error_color: #EC391E;
-  --background_color: #F2F2F2;
-  --input_color: #FFF6E7;
+  --primary_color_900: #0a1e22;
+  --primary_color_600: #1a5252;
+  --primary_color_500: #62b6b6;
+  --secondary_color: #952e1f;
+  --error_color: #ec391e;
+  --background_color: #f2f2f2;
+  --input_color: #fff6e7;
   --h1_text: 96px;
   --h2_text: 60px;
   --h3_text: 48px;
@@ -58,6 +58,7 @@ input {
   border-radius: var(--h3_text);
   color: var(--primary_color);
 }
+
 input:focus, input:invalid {
   outline: 1px solid #224040;
 }
@@ -77,7 +78,7 @@ label {
 
 input:focus ~ label,
 input:invalid ~ label {
-  top: calc((var(--h5_text)) * -1);
+  top: calc((var(--h5_text)) * (-1));
   font-size: var(--text_size);
   color: var(--primary_color);
 }
@@ -85,21 +86,14 @@ input:invalid ~ label {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
   width: 100%;
   height: 100%;
   font-size: 14px;
-}
-html body {
-  width: 100%;
-  min-height: 100%;
-  background-image: url("../src/bg 1.svg");
-  background-position: 100% 0%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 1680px) {
@@ -114,6 +108,7 @@ html body {
     --text_size: 14px;
   }
 }
+
 @media (max-width: 768px) {
   :root {
     --h1_text: 60px;
@@ -126,6 +121,7 @@ html body {
     --text_size: 14px;
   }
 }
+
 @media (max-width: 480px) {
   :root {
     --h1_text: 48px;
@@ -137,4 +133,5 @@ html body {
     --button_text: 12px;
     --text_size: 12px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
