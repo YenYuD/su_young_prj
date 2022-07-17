@@ -3,6 +3,18 @@ button.daylight {
     background-color: transparent;
 }
 
+@keyframes darkmode {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .day-light {
     //夜晚模式 （不小心寫反ㄌQQ)
     --themeColor: rgba(0, 0, 0, 0.208);
