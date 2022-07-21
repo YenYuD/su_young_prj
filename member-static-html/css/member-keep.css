@@ -29,6 +29,8 @@ html body .member-center .member-container .member-flex-box .member-body .checkb
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 html body .member-center .member-container .member-flex-box .member-body .checkbox label {
@@ -48,6 +50,13 @@ html body .member-center .member-container .member-flex-box .member-body .checkb
 html body .member-center .member-container .member-flex-box .member-body .checkbox label input:checked + span {
   background: var(--primary_color);
   color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+html body .member-center .member-container .member-flex-box .member-body .checkbox label input:not(:checked) + span {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 html body .member-center .member-container .member-flex-box .member-body .checkbox label .button {

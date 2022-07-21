@@ -24,6 +24,7 @@ html {
                             align-items: center;
                             border-radius: 1.5rem;
                             justify-content: center;
+                            transition: all 0.5s ease;
                             label {
                                 position: initial;
                                 color: var(--textColor);
@@ -39,6 +40,10 @@ html {
                                     &:checked + span {
                                         background: var(--primary_color);
                                         color: #fff;
+                                        transition: all 0.5s ease;
+                                    }
+                                    &:not(:checked) + span {
+                                        transition: all 0.5s ease;
                                     }
                                 }
                                 .button {

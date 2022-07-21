@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/member-center.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/member-order-list.css" />
+        <link
+            rel="stylesheet"
+            href="./fontawesome-free-6.1.1-web 2/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="../styleCSS/style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="left-logo">
+                    <a href="#"><img src="./src/logo.svg" alt="" /></a>
+                </div>
+                <div class="nav-li">
+                    <ul class="left">
+                        <li class="hover"><a href="#">關於舒營</a></li>
+                        <li class="hover"><a href="#">舒營食譜</a></li>
+                        <li class="hover"><a href="#">活動導覽</a></li>
+                        <li class="hover"><a href="#">預約訂位</a></li>
+                    </ul>
+                </div>
+                <div class="right-icon">
+                    <div class="login">
+                        <a href=""
+                            ><i class="fa-solid fa-circle-user fa-2xl"></i
+                        ></a>
+                    </div>
+                    <div class="cart">
+                        <a href=""
+                            ><i class="fa-solid fa-cart-shopping fa-2xl"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="member-center day-light">
+            <button class="daylight" onClick="myFunction()">
+                <svg
+                    id="dark_mode"
+                    width="55"
+                    height="55"
+                    viewBox="0 0 55 55"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        class="moon"
+                        d="M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 52.101 13.21 55 20.209 55 27.5 C 55 34.791 52.101 41.79 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z"
+                        fill="#fee140"
+                    />
+                </svg>
+            </button>
+            <div class="member-container">
+                <div class="head">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/PersonCircle.svg"
+                                        alt=""
+                                    />會員中心</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/CardList.svg"
+                                        alt=""
+                                    />訂單查詢</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/Vector.svg"
+                                        alt=""
+                                    />願望清單</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/diary.svg"
+                                        alt=""
+                                    />露營日記</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/avatar.png"
+                                        alt=""
+                                    />Shinder Lin</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="member-flex-box">
+                    <div class="sidebar">
+                        <div class="side-wrapper">
+                            <div class="side-title">會員</div>
+                            <div class="side-menu">
+                                <a href=""
+                                    ><img
+                                        src="./src/my-account.svg"
+                                        alt=""
+                                    />基本資料
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/password-edit.svg"
+                                        alt=""
+                                    />修改密碼
+                                </a>
+                            </div>
+                        </div>
+                        <div class="side-wrapper">
+                            <div class="side-title">會員項目</div>
+                            <div class="side-menu">
+                                <a href=""
+                                    ><img
+                                        src="./src/ticket-alt.svg"
+                                        alt=""
+                                    />我的優惠券
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/star-of-life.svg"
+                                        alt=""
+                                    />會員等級
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/credit-card.svg"
+                                        alt=""
+                                    />信用卡管理
+                                </a>
+                                <a href="#"
+                                    ><img
+                                        src="./src/CardList.svg"
+                                        alt=""
+                                    />訂單查詢</a
+                                >
+                                <a href="#"
+                                    ><img
+                                        src="./src/Vector.svg"
+                                        alt=""
+                                    />願望清單</a
+                                >
+                                <a href="#"
+                                    ><img
+                                        src="./src/diary.svg"
+                                        alt=""
+                                    />露營日記</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <div class="keep-title">訂單記錄</div>
+                        <div class="checkbox">
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="one-month"
+                                    value="one-month"
+                                /><span class="round button"
+                                    >一個月內</span
+                                ></label
+                            >
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="three-month"
+                                    value="three-month"
+                                /><span class="round button"
+                                    >三個月內</span
+                                ></label
+                            >
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="six-month"
+                                    value="six-month"
+                                /><span class="round button"
+                                    >六個月內
+                                </span></label
+                            >
+                        </div>
+                        <div class="order-list-container">
+                            <div class="order-list-group">
+                                <div class="order-list-toggle">
+                                    <div class="img">
+                                        <img
+                                            src="./src/room-type/beauty/roomA 2.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="text">
+                                        <div class="top">狩獵帳（已完成）</div>
+                                        <div class="bottom">
+                                            2022 年 3 月 18 日 - 2022 年 3 月 19
+                                            日
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-list">
+                                    <div class="left">
+                                        <img
+                                            src="./src/room-type/beauty/roomA 2.jpeg"
+                                            alt=""
+                                        />
+                                        <div class="temp-name">狩獵帳</div>
+                                        <div class="temp-amount">
+                                            帳數:<span>2</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="right-top">
+                                            <div class="check-in-time">
+                                                <div>入住時間:</div>
+                                                <div>
+                                                    <span>6</span
+                                                    >月<span>25</span>日
+                                                </div>
+                                            </div>
+                                            <div class="check-out-time">
+                                                <div>退房時間:</div>
+                                                <div>
+                                                    <span>6</span
+                                                    >月<span>27</span>日
+                                                </div>
+                                            </div>
+                                            <div class="check-in-member">
+                                                <div>入住人數:</div>
+                                                <div class="wrap">
+                                                    <div>
+                                                        <span>4</span>位大人
+                                                    </div>
+
+                                                    <div>
+                                                        <span>1</span>位小孩
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-bottom">
+                                            <div class="check">
+                                                <i
+                                                    class="fa-regular fa-rectangle-list"
+                                                ></i>
+                                                <div>價格</div>
+                                            </div>
+                                            <div class="night">
+                                                <div>
+                                                    狩獵帳 * <span>2</span>晚
+                                                </div>
+                                                <div><span>8,500</span>元</div>
+                                            </div>
+                                            <div class="plus">
+                                                <div>
+                                                    活動加購：
+                                                    <span>夜遊觀星月</span>*
+                                                    <span>4</span>人
+                                                </div>
+                                                <div><span>3,200</span>元</div>
+                                            </div>
+                                            <div class="plus">
+                                                <div>
+                                                    活動加購：
+                                                    <span>沙灘車</span>*
+                                                    <span>4</span>人
+                                                </div>
+                                                <div><span>3,200</span>元</div>
+                                            </div>
+                                            <div class="total-price">
+                                                <div class="btn">
+                                                    <a href="#">點我看地圖</a>
+                                                </div>
+                                                <div class="btn">
+                                                    <a href="#"
+                                                        >點我看房型介紹</a
+                                                    >
+                                                </div>
+                                                <div><span>11,700</span>元</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-list-group">
+                                <div class="order-list-toggle">
+                                    <div class="img">
+                                        <img
+                                            src="./src/room-type/beauty/roomA 2.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="text">
+                                        <div class="top">狩獵帳（已完成）</div>
+                                        <div class="bottom">
+                                            2022 年 3 月 18 日 - 2022 年 3 月 19
+                                            日
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-list">
+                                    <div class="left">
+                                        <img
+                                            src="./src/room-type/beauty/roomA 2.jpeg"
+                                            alt=""
+                                        />
+                                        <div class="temp-name">狩獵帳</div>
+                                        <div class="temp-amount">
+                                            帳數:<span>2</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="right-top">
+                                            <div class="check-in-time">
+                                                <div>入住時間:</div>
+                                                <div>
+                                                    <span>6</span
+                                                    >月<span>25</span>日
+                                                </div>
+                                            </div>
+                                            <div class="check-out-time">
+                                                <div>退房時間:</div>
+                                                <div>
+                                                    <span>6</span
+                                                    >月<span>27</span>日
+                                                </div>
+                                            </div>
+                                            <div class="check-in-member">
+                                                <div>入住人數:</div>
+                                                <div class="wrap">
+                                                    <div>
+                                                        <span>4</span>位大人
+                                                    </div>
+
+                                                    <div>
+                                                        <span>1</span>位小孩
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-bottom">
+                                            <div class="check">
+                                                <i
+                                                    class="fa-regular fa-rectangle-list"
+                                                ></i>
+                                                <div>價格</div>
+                                            </div>
+                                            <div class="night">
+                                                <div>
+                                                    狩獵帳 * <span>2</span>晚
+                                                </div>
+                                                <div><span>8,500</span>元</div>
+                                            </div>
+                                            <div class="plus">
+                                                <div>
+                                                    活動加購：
+                                                    <span>夜遊觀星月</span>*
+                                                    <span>4</span>人
+                                                </div>
+                                                <div><span>3,200</span>元</div>
+                                            </div>
+                                            <div class="total-price">
+                                                <div class="btn">
+                                                    <a href="#">點我看地圖</a>
+                                                </div>
+                                                <div class="btn">
+                                                    <a href="#"
+                                                        >點我看房型介紹</a
+                                                    >
+                                                </div>
+                                                <div><span>11,700</span>元</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+
+        <script>
+            function myFunction() {
+                const day = document.querySelector(".member-center");
+
+                day.classList.toggle("night");
+                day.classList.toggle("day-light");
+
+                day.style.transition = "all .5s ease";
+            }
+        </script>
+
+        <script type="text/javascript" src="./vanilla-tilt.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <!-- <script src="./script.js"></script> -->
+        <script src="./darkmode.js"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+
+        <script>
+            let groups = gsap.utils.toArray(".order-list-group");
+            let toggles = gsap.utils.toArray(".order-list-toggle");
+            let listToggles = groups.map(createAnimation);
+
+            toggles.forEach((toggle) => {
+                toggle.addEventListener("click", function () {
+                    toggleMenu(toggle);
+                });
+            });
+
+            function toggleMenu(clickedToggle) {
+                listToggles.forEach((toggleFn) => toggleFn(clickedToggle));
+            }
+            function createAnimation(element) {
+                let menu = element.querySelector(".order-list-toggle");
+                let box = element.querySelector(".order-list");
+
+                gsap.set(box, { height: "auto" });
+                let animation = gsap
+                    .from(box, {
+                        height: 0,
+                        duration: 0.5,
+                        ease: "power1.inOut",
+                    })
+                    .reverse();
+
+                return function (clickedMenu) {
+                    if (clickedMenu === menu) {
+                        animation.reversed(!animation.reversed());
+                    } else {
+                        animation.reverse();
+                    }
+                };
+            }
+        </script>
+    </body>
+</html>

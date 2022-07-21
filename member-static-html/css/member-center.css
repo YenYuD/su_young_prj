@@ -296,6 +296,20 @@ body .member-container .member-flex-box .member-body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 80%;
           flex: 0 1 80%;
+  width: 80%;
+  max-height: 960px;
+  padding: 60px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--textColor2);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1605px) {
@@ -358,7 +372,6 @@ body .member-container .member-flex-box .member-body {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     padding: 20px;
-    margin: auto;
     overflow: initial;
     max-height: initial;
   }
