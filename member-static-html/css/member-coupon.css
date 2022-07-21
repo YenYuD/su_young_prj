@@ -1,0 +1,75 @@
+.title {
+  color: var(--textColor);
+}
+
+.coupon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: var(--button_text);
+}
+
+.coupon-box .left .coupon,
+.coupon-box .right .coupon {
+  background-image: url("../src/Anonymous_generic_ticket 1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+  -webkit-transition: background-image 0.2s ease;
+  transition: background-image 0.2s ease;
+  -webkit-filter: drop-shadow(4px 4px 10px var(--transparent));
+          filter: drop-shadow(4px 4px 10px var(--transparent));
+  text-shadow: 1px 1px 7px var(--transparent);
+}
+
+.coupon-box .left .coupon:hover,
+.coupon-box .right .coupon:hover {
+  background-image: url("../src/Anonymous_generic_ticket 2.svg");
+}
+
+.coupon-box .left .coupon:nth-child(4), .coupon-box .left .coupon:nth-child(4):hover,
+.coupon-box .right .coupon:nth-child(4),
+.coupon-box .right .coupon:nth-child(4):hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .coupon-box {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .coupon-box {
+    font-size: 12px;
+  }
+  .coupon-box .left .coupon,
+  .coupon-box .right .coupon {
+    width: 200px;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=member-coupon.css.map */
