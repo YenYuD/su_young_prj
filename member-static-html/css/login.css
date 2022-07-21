@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -72,6 +73,7 @@ input:valid ~ label {
 form .btn {
   text-align: center;
 }
+
 form .btn button {
   background-color: #468484;
   border: none;
@@ -80,18 +82,25 @@ form .btn button {
   color: #ffffff;
   cursor: pointer;
 }
+
 form .btn button:hover {
-  box-shadow: 0px 0px 10px #62b6b6;
+  -webkit-box-shadow: 0px 0px 10px #62b6b6;
+          box-shadow: 0px 0px 10px #62b6b6;
 }
+
 form .btn button:active {
-  box-shadow: 0px 0px 20px #62b6b6;
+  -webkit-box-shadow: 0px 0px 20px #62b6b6;
+          box-shadow: 0px 0px 20px #62b6b6;
+  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
+
 form a {
   text-decoration: none;
   color: #fba63a;
   font-size: 14px;
 }
+
 form a:hover {
   color: #fcd29b;
 }
@@ -99,10 +108,18 @@ form a:hover {
 .login-container {
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .login-container .login-title {
   font-size: 30px;
   text-align: center;
@@ -112,114 +129,191 @@ form a:hover {
   margin-bottom: 20px;
   font-weight: 300;
 }
+
 .login-container .login-card {
   max-width: 600px;
   margin-top: 30px;
   margin: 0 auto;
   padding: 30px 30px 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30vw;
   border-radius: 1.5rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.03)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.03));
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  box-shadow: 5px 22px 54px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 22px 54px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 22px 54px rgba(0, 0, 0, 0.3);
 }
+
 .login-container .login-card .third-party {
   padding-top: 30px;
   text-align: center;
 }
+
 .login-container .login-card .third-party .google-login {
   padding-bottom: 20px;
   width: 280px;
 }
+
 .login-container .login-card .third-party .google-login a {
   text-decoration: none;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   padding: 8px 18px;
   background-color: rgba(0, 0, 0, 0.379);
   border-radius: 1.5rem;
 }
+
 .login-container .login-card .third-party .google-login a:hover {
-  box-shadow: 0px 0px 10px #62b6b6;
+  -webkit-box-shadow: 0px 0px 10px #62b6b6;
+          box-shadow: 0px 0px 10px #62b6b6;
 }
+
 .login-container .login-card .third-party .google-login a img {
   width: 40px;
   padding: 0 10px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .login-container .login-card .third-party .google-login a:hover img {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
+
 .login-container .login-card .third-party .facebook-login {
   width: 280px;
 }
+
 .login-container .login-card .third-party .facebook-login a {
   text-decoration: none;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   padding: 8px 18px;
   background-color: rgba(0, 0, 0, 0.379);
   border-radius: 1.5rem;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .login-container .login-card .third-party .facebook-login a:hover {
-  box-shadow: 0px 0px 10px #62b6b6;
+  -webkit-box-shadow: 0px 0px 10px #62b6b6;
+          box-shadow: 0px 0px 10px #62b6b6;
 }
+
 .login-container .login-card .third-party .facebook-login a img {
   width: 40px;
   padding: 0 10px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .login-container .login-card .third-party .facebook-login a:hover img {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 footer {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 300px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #224040;
   color: white;
 }
+
 footer .footer_left {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 footer .footer_left .footer_logo {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 footer .footer_left .footer_logo .big_title {
   font-size: x-large;
   font-weight: 400;
 }
+
 footer .footer_left .footer_logo .footer_icon {
   font-size: x-large;
 }
+
 footer .footer_right {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
+
 footer .footer_right li {
   font-size: larger;
   font-weight: 400;
@@ -233,13 +327,14 @@ footer .footer_right li {
     font-size: 16px;
   }
   body main .login-container .login-card .third-party .google-login,
-body main .login-container .login-card .third-party .facebook-login {
+  body main .login-container .login-card .third-party .facebook-login {
     width: 240px;
   }
   body main .login-container form input {
     width: 250px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1200px) {
   body main .login-container .login-card {
     width: 450px;
@@ -248,6 +343,7 @@ body main .login-container .login-card .third-party .facebook-login {
     width: 250px;
   }
 }
+
 @media (min-width: 480px) and (max-width: 768px) {
   body main .login-container .login-title {
     font-size: 18px;
@@ -256,12 +352,19 @@ body main .login-container .login-card .third-party .facebook-login {
     width: 450px;
   }
   body main .login-container .login-card .third-party {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main .login-container .login-card .third-party .google-login,
-body main .login-container .login-card .third-party .facebook-login {
+  body main .login-container .login-card .third-party .facebook-login {
     min-width: 80px;
   }
   body main .login-container form .title {
@@ -275,6 +378,7 @@ body main .login-container .login-card .third-party .facebook-login {
     font-size: 16px;
   }
 }
+
 @media (max-width: 480px) {
   body main .login-container .login-title {
     font-size: 18px;
@@ -283,16 +387,23 @@ body main .login-container .login-card .third-party .facebook-login {
     width: 80vw;
   }
   body main .login-container .login-card .third-party {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main .login-container .login-card .third-party .google-login,
-body main .login-container .login-card .third-party .facebook-login {
+  body main .login-container .login-card .third-party .facebook-login {
     min-width: 80px;
   }
   body main .login-container .login-card .third-party .google-login a,
-body main .login-container .login-card .third-party .facebook-login a {
+  body main .login-container .login-card .third-party .facebook-login a {
     font-size: 12px;
   }
   body main .login-container form .title {
@@ -305,4 +416,5 @@ body main .login-container .login-card .third-party .facebook-login a {
   body main .login-container form .group label {
     font-size: 12px;
   }
-}/*# sourceMappingURL=login.css.map */
+}
+/*# sourceMappingURL=login.css.map */

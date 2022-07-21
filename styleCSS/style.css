@@ -58,6 +58,7 @@ input {
   border-radius: var(--h3_text);
   color: var(--primary_color);
 }
+
 input:focus, input:invalid {
   outline: 1px solid #224040;
 }
@@ -77,7 +78,7 @@ label {
 
 input:focus ~ label,
 input:invalid ~ label {
-  top: calc((var(--h5_text)) * -1);
+  top: calc((var(--h5_text)) * (-1));
   font-size: var(--text_size);
   color: var(--primary_color);
 }
@@ -85,7 +86,8 @@ input:invalid ~ label {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -106,6 +108,7 @@ html {
     --text_size: 14px;
   }
 }
+
 @media (max-width: 768px) {
   :root {
     --h1_text: 60px;
@@ -118,6 +121,7 @@ html {
     --text_size: 14px;
   }
 }
+
 @media (max-width: 480px) {
   :root {
     --h1_text: 48px;
@@ -129,4 +133,5 @@ html {
     --button_text: 12px;
     --text_size: 12px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
