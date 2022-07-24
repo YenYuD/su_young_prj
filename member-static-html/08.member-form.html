@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/member-center.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="../styleCSS/style.css" />
+        <link
+            rel="stylesheet"
+            href="./fontawesome-free-6.1.1-web 2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/member-form.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="left-logo">
+                    <a href="#"><img src="./src/logo.svg" alt="" /></a>
+                </div>
+                <div class="nav-li">
+                    <ul class="left">
+                        <li class="hover"><a href="#">關於舒營</a></li>
+                        <li class="hover"><a href="#">舒營食譜</a></li>
+                        <li class="hover"><a href="#">活動導覽</a></li>
+                        <li class="hover"><a href="#">預約訂位</a></li>
+                    </ul>
+                </div>
+                <div class="right-icon">
+                    <div class="login">
+                        <a href=""
+                            ><i class="fa-solid fa-circle-user fa-2xl"></i
+                        ></a>
+                    </div>
+                    <div class="cart">
+                        <a href=""
+                            ><i class="fa-solid fa-cart-shopping fa-2xl"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="member-center day-light">
+            <button class="daylight" onClick="myFunction()">
+                <svg
+                    id="dark_mode"
+                    width="55"
+                    height="55"
+                    viewBox="0 0 55 55"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        class="moon"
+                        d="M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 52.101 13.21 55 20.209 55 27.5 C 55 34.791 52.101 41.79 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z"
+                        fill="#fee140"
+                    />
+                </svg>
+            </button>
+            <div class="member-container">
+                <div class="head">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/PersonCircle.svg"
+                                        alt=""
+                                    />會員中心</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/CardList.svg"
+                                        alt=""
+                                    />訂單查詢</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/Vector.svg"
+                                        alt=""
+                                    />願望清單</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/diary.svg"
+                                        alt=""
+                                    />露營日記</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/avatar.png"
+                                        alt=""
+                                    />Shinder Lin</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="member-flex-box">
+                    <div class="sidebar">
+                        <div class="side-wrapper">
+                            <div class="side-title">會員</div>
+                            <div class="side-menu">
+                                <a href=""
+                                    ><img
+                                        src="./src/my-account.svg"
+                                        alt=""
+                                    />基本資料
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/password-edit.svg"
+                                        alt=""
+                                    />修改密碼
+                                </a>
+                            </div>
+                        </div>
+                        <div class="side-wrapper">
+                            <div class="side-title">會員項目</div>
+                            <div class="side-menu">
+                                <a href=""
+                                    ><img
+                                        src="./src/ticket-alt.svg"
+                                        alt=""
+                                    />我的優惠券
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/star-of-life.svg"
+                                        alt=""
+                                    />會員等級
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/credit-card.svg"
+                                        alt=""
+                                    />信用卡管理
+                                </a>
+                                <a href="#"
+                                    ><img
+                                        src="./src/CardList.svg"
+                                        alt=""
+                                    />訂單查詢</a
+                                >
+                                <a href="#"
+                                    ><img
+                                        src="./src/Vector.svg"
+                                        alt=""
+                                    />願望清單</a
+                                >
+                                <a href="#"
+                                    ><img
+                                        src="./src/diary.svg"
+                                        alt=""
+                                    />露營日記</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <div class="title">會員資料</div>
+                        <div class="form-container">
+                            <div class="left">
+                                <form action="">
+                                    <div class="name">
+                                        <div>
+                                            <div class="last-name">姓：</div>
+                                            <div class="input_group">
+                                                <input
+                                                    type="text"
+                                                    placeholder="姓"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="last-name">名：</div>
+                                            <div class="input_group">
+                                                <input
+                                                    type="text"
+                                                    placeholder="名"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="last-name">會員生日：</div>
+                                        <div class="input_group">
+                                            <input type="date" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="last-name">電子郵件：</div>
+                                        <div class="input_group">
+                                            <input
+                                                type="email"
+                                                placeholder="電子郵件"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="last-name">行動電話：</div>
+                                        <div class="input_group">
+                                            <input
+                                                type="tel"
+                                                placeholder="行動電話"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>會員地址：</div>
+                                        <select name="city" id="city">
+                                            <option value="" disabled selected>
+                                                請選擇
+                                            </option>
+                                        </select>
+                                        縣/市
+                                        <select name="area" id="area">
+                                            <option value="" disabled selected>
+                                                請選擇
+                                            </option>
+                                        </select>
+                                        區
+                                        <div class="input_group">
+                                            <input
+                                                type="text"
+                                                placeholder="地址"
+                                            />
+                                        </div>
+                                    </div>
+                                    <button type="submit">更新檔案</button>
+                                </form>
+                            </div>
+                            <div class="right">
+                                <div class="title">上傳大頭貼：</div>
+                                <div>
+                                    <label for="file" class="file-input">
+                                        <div class="drop-zone">
+                                            <p class="para">
+                                                請選擇檔案或拖曳檔案
+                                            </p>
+                                        </div>
+                                        <input
+                                            type="file"
+                                            id="file"
+                                            multiple
+                                            accept="image/*"
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function myFunction() {
+                const day = document.querySelector(".member-center");
+
+                day.classList.toggle("night");
+                day.classList.toggle("day-light");
+                day.style.transition = "all .5s ease";
+            }
+
+            //拖曳上傳
+
+            const label = document.querySelector(".file-input");
+            const input = document.querySelector("#file");
+            const para = document.querySelector(".para");
+            const dropZone = document.querySelector(".drop-zone");
+
+            function previewFile() {
+                // const preview = document.querySelector("img");
+                const file = input.files[0];
+                const reader = new FileReader();
+
+                reader.addEventListener(
+                    "load",
+                    function () {
+                        // convert image file to base64 string
+                        // preview.src = reader.result;
+                        const img = document.createElement("img");
+                        img.classList.add("preview_image");
+                        img.file = file;
+                        dropZone.appendChild(img);
+                        img.src = reader.result; // 將圖片加到 preview 上
+                    },
+                    false
+                );
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            }
+
+            function handleFiles(files) {
+                for (var i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const imageType = /image.*/;
+
+                    if (!file.type.match(imageType)) {
+                        continue;
+                    }
+
+                    const img = document.createElement("img");
+                    img.classList.add("preview_image");
+                    img.file = file;
+                    dropZone.appendChild(img); // 將圖片加到 preview 上
+
+                    const reader = new FileReader();
+                    reader.onload = (e) => (img.src = e.target.result);
+                    reader.readAsDataURL(file);
+                }
+            }
+
+            input.addEventListener("change", (e) => {
+                previewFile();
+                label.classList.add("active");
+                para.style.display = "none";
+            });
+
+            // label.addEventListener("click", (e) => {
+            //     input.click();
+            // });
+
+            function dragenter(e) {
+                e.stopPropagation(); //終止事件傳導
+                e.preventDefault(); //終止預設行為
+            }
+
+            function dragover(e) {
+                e.stopPropagation(); //終止事件傳導
+                e.preventDefault(); //終止預設行為
+            }
+
+            function drop(e) {
+                e.stopPropagation(); //終止事件傳導
+                e.preventDefault(); //終止預設行為
+
+                const dt = e.dataTransfer;
+                const files = dt.files; // 取得被拖曳的圖片
+
+                handleFiles(files);
+                label.classList.add("active");
+                para.style.display = "none";
+            }
+
+            dropZone.addEventListener("dragenter", dragenter, false);
+            dropZone.addEventListener("dragover", dragover, false);
+            dropZone.addEventListener("drop", drop, false);
+        </script>
+        <!-- <script src="./darkmode.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
+    </body>
+</html>
