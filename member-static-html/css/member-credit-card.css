@@ -1,0 +1,367 @@
+:root {
+  --primary_color: #224040;
+  --primary_color_900: #0a1e22;
+  --primary_color_600: #1a5252;
+  --primary_color_500: #62b6b6;
+  --secondary_color: #952e1f;
+  --error_color: #ec391e;
+  --background_color: #f2f2f2;
+  --input_color: #fff6e7;
+  --h1_text: 96px;
+  --h2_text: 60px;
+  --h3_text: 48px;
+  --h4_text: 34px;
+  --h5_text: 24px;
+  --subtitle_text: 16px;
+  --button_text: 14px;
+  --text_size: 14px;
+}
+
+h1 {
+  font-size: var(--h1_text);
+}
+
+h2 {
+  font-size: var(--h2_text);
+}
+
+h3 {
+  font-size: var(--h3_text);
+}
+
+h4 {
+  font-size: var(--h4_text);
+}
+
+h5 {
+  font-size: var(--h5_text);
+}
+
+p {
+  font-size: var(--text_size);
+}
+
+/* input LABEL */
+/* input */
+.input_group {
+  position: relative;
+}
+
+input {
+  font-size: var(--subtitle_text);
+  padding: var(--text_size) var(--text_size) var(--text_size) calc(var(--text_size) * 3);
+  display: block;
+  width: calc(var(--h4_text) * 10);
+  height: var(--h3_text);
+  border: none;
+  background-color: #fff6e7;
+  border-radius: var(--h3_text);
+  color: var(--primary_color);
+}
+
+input:focus, input:invalid {
+  outline: 1px solid #224040;
+}
+
+label {
+  color: #999;
+  font-size: var(--subtitle_text);
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: var(--text_size);
+  top: calc(var(--text_size) * 0.7);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:invalid ~ label {
+  top: calc((var(--h5_text)) * (-1));
+  font-size: var(--text_size);
+  color: var(--primary_color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+@media (max-width: 1680px) {
+  :root {
+    --h1_text: 84px;
+    --h2_text: 50px;
+    --h3_text: 40px;
+    --h4_text: 28px;
+    --h5_text: 20px;
+    --subtitle_text: 16px;
+    --button_text: 14px;
+    --text_size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1_text: 60px;
+    --h2_text: 46px;
+    --h3_text: 36px;
+    --h4_text: 22px;
+    --h5_text: 16px;
+    --subtitle_text: 14px;
+    --button_text: 14px;
+    --text_size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --h1_text: 48px;
+    --h2_text: 36px;
+    --h3_text: 28px;
+    --h4_text: 20px;
+    --h5_text: 14px;
+    --subtitle_text: 14px;
+    --button_text: 12px;
+    --text_size: 12px;
+  }
+}
+
+.credit-card-container {
+  color: var(--textColor);
+}
+
+.credit-card-container .btn {
+  padding: 30px 0;
+}
+
+.credit-card-container .btn button {
+  border: none;
+  font-size: var(--button_text);
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: var(--primary_color);
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 1px 5px var(--transparent);
+          box-shadow: 1px 1px 5px var(--transparent);
+}
+
+.credit-card-container .btn button:active {
+  background-color: var(--primary_color_500);
+}
+
+body .lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.687);
+  -webkit-transition: display 0.5s ease;
+  transition: display 0.5s ease;
+  z-index: 3;
+}
+
+body .lightbox form {
+  display: none;
+  letter-spacing: 3px;
+  padding: 20px;
+  width: 25vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.05)), to(rgba(0, 0, 0, 0.33)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.33));
+  border-radius: 15px;
+  text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.351);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: display 0.5s ease;
+  transition: display 0.5s ease;
+  color: #fff;
+}
+
+body .lightbox form legend {
+  text-align: center;
+}
+
+body .lightbox form fieldset {
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+body .lightbox form fieldset label {
+  color: var(--textColor);
+  position: initial;
+  pointer-events: all;
+  left: initial;
+  top: initial;
+}
+
+body .lightbox form fieldset input {
+  padding: initial;
+  width: 60px;
+  padding: 5px;
+  height: initial;
+  border-radius: 5px;
+}
+
+body .lightbox form fieldset.card-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .lightbox form fieldset.card-number div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+body .lightbox form fieldset.card-number div input {
+  width: 25%;
+}
+
+body .lightbox form fieldset.card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .lightbox form fieldset.card-holder input {
+  width: 100%;
+}
+
+body .lightbox form .fieldset-expiration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+body .lightbox form .fieldset-expiration div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .lightbox form .fieldset-expiration div input#card-ccv {
+  width: 95%;
+}
+
+body .lightbox form .fieldset-expiration .select {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+body .lightbox form .fieldset-expiration .select select {
+  border: none;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff6e7;
+}
+
+body .lightbox form .btn {
+  padding: 20px;
+  text-align: center;
+}
+
+body .lightbox form .btn button {
+  border: none;
+  font-size: var(--button_text);
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: var(--primary_color);
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .lightbox form .btn button:active {
+  background-color: var(--primary_color_500);
+}
+
+.member-body .title {
+  margin: 2rem 0;
+}
+
+.member-body .credit-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border-radius: 15px;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--cardBackground)));
+  background-image: linear-gradient(var(--cardBackground));
+}
+
+.member-body .credit-card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.member-body .credit-card .info i {
+  line-height: 1;
+}
+
+.member-body .credit-card .delete button {
+  border: none;
+  background-color: transparent;
+  color: var(--secondary_color);
+}
+/*# sourceMappingURL=member-credit-card.css.map */

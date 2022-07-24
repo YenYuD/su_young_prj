@@ -102,6 +102,10 @@
         width: 75vw;
         height: 40vh;
     }
+    @media screen and (max-width: 376px) {
+        width: 75vw;
+        height: 29vh;
+    }
 
     & > * {
         grid-area: stack;

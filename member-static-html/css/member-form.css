@@ -287,6 +287,13 @@ html {
   }
 }
 
+@media screen and (max-width: 376px) {
+  .file-input {
+    width: 75vw;
+    height: 29vh;
+  }
+}
+
 .file-input > * {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

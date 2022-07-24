@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/member-center.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="../styleCSS/style.css" />
+        <link
+            rel="stylesheet"
+            href="./fontawesome-free-6.1.1-web 2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/member-credit-card.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="left-logo">
+                    <a href="#"><img src="./src/logo.svg" alt="" /></a>
+                </div>
+                <div class="nav-li">
+                    <ul class="left">
+                        <li class="hover"><a href="#">關於舒營</a></li>
+                        <li class="hover"><a href="#">舒營食譜</a></li>
+                        <li class="hover"><a href="#">活動導覽</a></li>
+                        <li class="hover"><a href="#">預約訂位</a></li>
+                    </ul>
+                </div>
+                <div class="right-icon">
+                    <div class="login">
+                        <a href=""
+                            ><i class="fa-solid fa-circle-user fa-2xl"></i
+                        ></a>
+                    </div>
+                    <div class="cart">
+                        <a href=""
+                            ><i class="fa-solid fa-cart-shopping fa-2xl"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="lightbox">
+            <form action="" class="form">
+                <legend>新增信用卡</legend>
+                <fieldset class="card-number">
+                    <label for="card-number">卡號：</label>
+                    <div>
+                        <input
+                            type="num"
+                            id="card-number"
+                            class="input-cart-number"
+                            maxlength="4"
+                        />
+                        <input
+                            type="num"
+                            id="card-number"
+                            class="input-cart-number"
+                            maxlength="4"
+                        />
+                        <input
+                            type="num"
+                            id="card-number"
+                            class="input-cart-number"
+                            maxlength="4"
+                        />
+                        <input
+                            type="num"
+                            id="card-number"
+                            class="input-cart-number"
+                            maxlength="4"
+                        />
+                    </div>
+                </fieldset>
+                <fieldset class="card-holder">
+                    <label for="card-holder">持卡人：</label>
+                    <input type="text" id="card-holder" />
+                </fieldset>
+                <fieldset class="fieldset-expiration">
+                    <div>
+                        <label for="card-expiration-month">有效年月：</label>
+                        <div class="select">
+                            <select id="card-expiration-month">
+                                <option></option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select id="card-expiration-year">
+                                <option></option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="card-ccv">背面末三碼：</label>
+                        <input type="text" id="card-ccv" maxlength="3" />
+                    </div>
+                </fieldset>
+                <div class="btn">
+                    <button type="submit">儲存卡片</button>
+                </div>
+            </form>
+        </div>
+        <section class="member-center day-light">
+            <button class="daylight" onClick="myFunction()">
+                <svg
+                    id="dark_mode"
+                    width="55"
+                    height="55"
+                    viewBox="0 0 55 55"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        class="moon"
+                        d="M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 52.101 13.21 55 20.209 55 27.5 C 55 34.791 52.101 41.79 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z"
+                        fill="#fee140"
+                    />
+                </svg>
+            </button>
+            <div class="member-container">
+                <div class="head">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/PersonCircle.svg"
+                                        alt=""
+                                    />會員中心</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/CardList.svg"
+                                        alt=""
+                                    />訂單查詢</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/Vector.svg"
+                                        alt=""
+                                    />願望清單</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/diary.svg"
+                                        alt=""
+                                    />露營日記</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./src/avatar.png"
+                                        alt=""
+                                    />Shinder Lin</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="member-flex-box">
+                    <div class="sidebar">
+                        <div class="side-wrapper">
+                            <div class="side-title">會員</div>
+                            <div class="side-menu">
+                                <a href=""
+                                    ><img
+                                        src="./src/my-account.svg"
+                                        alt=""
+                                    />基本資料
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/password-edit.svg"
+                                        alt=""
+                                    />修改密碼
+                                </a>
+                            </div>
+                        </div>
+                        <div class="side-wrapper">
+                            <div class="side-title">會員項目</div>
+                            <div class="side-menu">
+                                <a href=""
+                                    ><img
+                                        src="./src/ticket-alt.svg"
+                                        alt=""
+                                    />我的優惠券
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/star-of-life.svg"
+                                        alt=""
+                                    />會員等級
+                                </a>
+                                <a href=""
+                                    ><img
+                                        src="./src/credit-card.svg"
+                                        alt=""
+                                    />信用卡管理
+                                </a>
+                                <a href="#"
+                                    ><img
+                                        src="./src/CardList.svg"
+                                        alt=""
+                                    />訂單查詢</a
+                                >
+                                <a href="#"
+                                    ><img
+                                        src="./src/Vector.svg"
+                                        alt=""
+                                    />願望清單</a
+                                >
+                                <a href="#"
+                                    ><img
+                                        src="./src/diary.svg"
+                                        alt=""
+                                    />露營日記</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <div class="title">信用卡管理</div>
+                        <div class="credit-card-container">
+                            <div class="credit-card">
+                                <div class="info">
+                                    <i class="fa-brands fa-cc-visa fa-xl"></i>
+                                    <div class="bank">中華郵政</div>
+                                    <div>(**** 1784)</div>
+                                </div>
+                                <div class="delete">
+                                    <button>刪除</button>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <button class="new-card">新增信用卡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const body = document.querySelector(".member-body");
+            console.log(body);
+
+            function myFunction() {
+                const day = document.querySelector(".member-center");
+
+                day.classList.toggle("night");
+                day.classList.toggle("day-light");
+                day.style.transition = "all .5s ease";
+            }
+
+            //lightbox
+
+            const btn = document.querySelector(".new-card");
+            const form = document.querySelector(".form");
+            const memberBody = document.querySelector(".member-body");
+            const lightBox = document.querySelector(".lightbox");
+
+            form.addEventListener("click", (e) => {
+                e.stopPropagation();
+            });
+
+            btn.addEventListener("click", (e) => {
+                form.style.display = "block";
+                lightBox.style.display = "block";
+                e.stopPropagation();
+            });
+
+            lightBox.addEventListener("click", (e) => {
+                form.style.display = "none";
+                lightBox.style.display = "none";
+            });
+        </script>
+        <script src="./darkmode.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    </body>
+</html>
