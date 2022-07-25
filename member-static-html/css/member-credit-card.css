@@ -196,6 +196,24 @@ body .lightbox form {
   color: #fff;
 }
 
+@media screen and (max-width: 1246px) {
+  body .lightbox form {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .lightbox form {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body .lightbox form {
+    width: 80vw;
+  }
+}
+
 body .lightbox form legend {
   text-align: center;
 }
@@ -346,6 +364,24 @@ body .lightbox form .btn button:active {
           align-items: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--cardBackground)));
   background-image: linear-gradient(var(--cardBackground));
+}
+
+@media screen and (max-width: 1200px) {
+  .member-body .credit-card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .member-body .credit-card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .member-body .credit-card {
+    width: 100%;
+  }
 }
 
 .member-body .credit-card .info {

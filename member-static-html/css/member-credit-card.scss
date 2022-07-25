@@ -51,6 +51,18 @@ body {
             transition: display 0.5s ease;
             color: #fff;
 
+            @media screen and (max-width: 1246px) {
+                width: 40vw;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 60vw;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 80vw;
+            }
+
             legend {
                 text-align: center;
             }
@@ -151,6 +163,19 @@ body {
         justify-content: space-between;
         align-items: center;
         background-image: linear-gradient(var(--cardBackground));
+
+        @media screen and (max-width: 1200px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 976px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+
         .info {
             display: flex;
             gap: 1rem;
